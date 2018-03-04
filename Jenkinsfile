@@ -18,8 +18,7 @@ sh "SET DOCKER_HOST=tcp://192.168.99.102:2376"
 sh "SET DOCKER_CERT_PATH=C:\\Users\\mrhuang\\.docker\\machine\\machines\\default"
 sh "SET DOCKER_MACHINE_NAME=default"
 sh "SET COMPOSE_CONVERT_WINDOWS_PATHS=true"
-sh "REM Run this command to configure your shell:"
-sh "REM     @FOR /f \\"tokens=*\\" %i IN ('docker-machine env --shell cmd default') DO @%i"
+
         sh "docker build -t ${imageName} -f applications/hello-kenzan/Dockerfile applications/hello-kenzan"
     
     stage "Push"
