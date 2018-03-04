@@ -13,11 +13,7 @@ node {
     env.BUILDIMG=imageName
 
     stage "Build"
- sh 'export DOCKER_TLS_VERIFY="1"'
-sh 'export DOCKER_HOST="tcp://192.168.99.102:2376"'
-sh 'export DOCKER_CERT_PATH="C:\\Users\\mrhuang\\.docker\\machine\\machines\\default"'
-sh 'export DOCKER_MACHINE_NAME="default"'
-sh 'export COMPOSE_CONVERT_WINDOWS_PATHS="true"'
+
 
         sh "docker build -t ${imageName} -f applications/hello-kenzan/Dockerfile applications/hello-kenzan"
     
