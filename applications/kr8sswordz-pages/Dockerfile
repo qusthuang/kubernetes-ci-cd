@@ -1,4 +1,4 @@
-FROM docker pull registry.cn-hangzhou.aliyuncs.com/labikyo/node-yarn:7-alpine
+FROM  registry.cn-hangzhou.aliyuncs.com/labikyo/node-yarn:7-alpine
 
 # Create app directory
 RUN mkdir -p /usr/src/app
